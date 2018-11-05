@@ -1,0 +1,10 @@
+debug: false
+
+spring:
+  hazelcast:
+    config: test-hazelcast-config.xml
+
+logging:
+  level:
+    com.indivaragroup: debug
+
