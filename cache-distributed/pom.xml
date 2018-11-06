@@ -1,8 +1,25 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>io.kitonus.cache</groupId>
+  <groupId>com.github.kitonus.cache</groupId>
   <artifactId>cache-distributed</artifactId>
-  <version>1.0.0</version>
+  <version>2.0.0-SNAPSHOT</version>
+  
+  <name>Distributed Cache for Spring Boot</name>
+  <description>Distributed Cache for Spring Boot 2.1.x based on Hazelcast and Caffeine</description>
+  <url>https://github.com/kitonus/cache</url>
+  
+  <developers>
+  	<developer>
+  		<name>Hanendyo Wicaksono</name>
+  		<email>kitonus@gmail.com</email>
+  	</developer>
+  </developers>
+  
+  <scm>
+  	<connection>https://github.com/kitonus/cache/archive/master.zip</connection>
+  	<developerConnection>https://github.com/kitonus/cache.git</developerConnection>
+  	<url>https://github.com/kitonus/cache</url>
+  </scm>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
