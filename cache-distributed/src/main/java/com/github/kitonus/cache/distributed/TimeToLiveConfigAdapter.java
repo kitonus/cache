@@ -7,7 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * If timeToLive < 0 then timeToLive == forever
+ * If timeToLive less than 0 then timeToLive is set to forever
  * @author hanendyo.wicaksono
  *
  */

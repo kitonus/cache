@@ -40,7 +40,7 @@ public abstract class CacheManagerConfigAdapter extends CachingConfigurerSupport
 	
 	/**
 	 * Configure cache dependencies by names
-	 * @param cacheNameTree
+	 * @param cacheNameTree cache name tree
 	 */
 	protected abstract void configureCacheNameTree(CacheNameTree cacheNameTree);
 	
@@ -70,7 +70,7 @@ public abstract class CacheManagerConfigAdapter extends CachingConfigurerSupport
 	
 	/**
 	 * Configure per item class time-to-live
-	 * @param ttlConfig
+	 * @param ttlConfig time-to-live configuration
 	 */
 	protected abstract void applyItemTimeToLiveValues(TimeToLiveConfig ttlConfig);
 	

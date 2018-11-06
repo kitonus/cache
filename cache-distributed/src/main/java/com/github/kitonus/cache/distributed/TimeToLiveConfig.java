@@ -6,7 +6,7 @@ public interface TimeToLiveConfig {
 
 	/**
 	 * Accessed by CacheImpl to check if item is stale
-	 * @param item
+	 * @param item deserialized item
 	 * @param cacheName cache name
 	 * @return true if stale, otherwise returns false
 	 */
@@ -31,7 +31,7 @@ public interface TimeToLiveConfig {
 	
 	/**
 	 * Set item time to live by cache name
-	 * @param cache name
+	 * @param cacheName cache name
 	 * @param timeToLive time to live
 	 * @param timeUnit time-to-live unit
 	 * @return TimeToLiveConfig
@@ -40,7 +40,7 @@ public interface TimeToLiveConfig {
 
 	/**
 	 * Define default time to live in milliseconds
-	 * @param defaultTimeToLiveMillis default time-to-live in milliseconds
+	 * @param timeToLive default time-to-live in milliseconds
 	 * @param timeUnit time-to-live time unit
 	 */
 	public void setDefaultTimeToLive(long timeToLive, TimeUnit timeUnit);

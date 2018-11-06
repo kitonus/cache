@@ -2,6 +2,11 @@ package com.github.kitonus.cache.distributed;
 
 import java.util.List;
 
+/**
+ * JSON serializer and deserializer
+ * @author hanendyo.wicaksono
+ *
+ */
 public abstract class AbstractJsonSerializer implements CacheSerializer {
 	public static final char TYPE_CODE_LIST = 'l';
 	
