@@ -1,6 +1,7 @@
 package io.kitonus.cache.distributed;
 
 import java.util.Collection;
+import java.util.Collections;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.actuate.autoconfigure.cache.CachesEndpointAutoConfiguration;
@@ -45,9 +46,11 @@ public abstract class CacheManagerConfigAdapter extends CachingConfigurerSupport
 	
 	/**
 	 * Configure pre-initialization of caches
-	 * @return
+	 * @return by default returns empty list
 	 */
-	protected abstract Collection<String> cacheNamesToPreInitialize();
+	protected Collection<String> cacheNamesToPreInitialize(){
+		return Collections.emptyList();
+	}
 
 	@Override
 	public KeyGenerator keyGenerator() {
