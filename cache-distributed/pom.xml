@@ -4,7 +4,7 @@
   <artifactId>cache-distributed</artifactId>
   <version>2.0.0-SNAPSHOT</version>
   
-  <name>Distributed Cache for Spring Boot</name>
+  <name>${project.groupId}:${project.artifactId}</name>
   <description>Distributed Cache for Spring Boot 2.1.x based on Hazelcast and Caffeine</description>
   <url>https://github.com/kitonus/cache</url>
   
@@ -12,11 +12,19 @@
   	<developer>
   		<name>Hanendyo Wicaksono</name>
   		<email>kitonus@gmail.com</email>
+  		<organizationUrl>https://github.com/kitonus</organizationUrl>
   	</developer>
   </developers>
   
+<licenses>
+  <license>
+    <name>The Apache License, Version 2.0</name>
+    <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+  </license>
+</licenses>
+
   <scm>
-  	<connection>https://github.com/kitonus/cache/archive/master.zip</connection>
+  	<connection>scm:git:git://github.com/kitonus/cache.git</connection>
   	<developerConnection>https://github.com/kitonus/cache.git</developerConnection>
   	<url>https://github.com/kitonus/cache</url>
   </scm>
