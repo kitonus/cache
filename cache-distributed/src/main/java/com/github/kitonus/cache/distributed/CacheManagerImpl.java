@@ -36,7 +36,7 @@ public class CacheManagerImpl implements CacheManager, InitializingBean, Applica
 	
 	/**
 	 * Set cache implementations
-	 * @param cacheImpls
+	 * @param cacheImpls cache implementation classes
 	 */
 	public void setCacheImplementations(Collection<Cache> cacheImpls){
 		if (cacheImpls == null){
