@@ -4,7 +4,6 @@ import java.util.Collection;
 import java.util.Collections;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.actuate.autoconfigure.cache.CachesEndpointAutoConfiguration;
 import org.springframework.cache.CacheManager;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.interceptor.KeyGenerator;
@@ -74,6 +73,4 @@ public abstract class CacheManagerConfigAdapter extends CachingConfigurerSupport
 	 */
 	protected abstract void applyItemTimeToLiveValues(TimeToLiveConfig ttlConfig);
 	
-	CachesEndpointAutoConfiguration conf;
-
 }
